@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+body{
+    background-color: #080C31;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 95vh;
+}
+
+#calculadora{
+    background-color: #17173B;
+    padding: 14px;
+    border: none;
+    border-radius: 15px;
+    
+}
+
+#display{
+    display: flex;
+    flex-direction: column;
+    width: 315px;
+    border: none;
+    border-radius: 15px;
+    background-color: #080C31;
+}
+
+#minipantalla{
+    height: 30px;
+    text-align: right;
+    margin: 5px;
+    padding-right: 10px;
+    background-color: #080C31;
+    border: none;
+    color: #fff;
+    font-family: "Roboto Mono", monospace;
+
+}
+
+#minipantalla:focus{border: none;}
+
+#pantalla{
+    height: 70px;
+    text-align: right;
+    margin: 5px;
+    padding-right: 10px;
+    border: none;
+    background-color: #080C31;
+    font-size: 40px;
+    color: #fff;
+    font-family: "Roboto Mono", monospace;
+
+}
+
+#pantalla:focus{border: none;}
+
+.botones{
+    display: grid;
+    grid-template-columns: repeat(4, 75px);
+    grid-template-rows: repeat(5, 75px);
+    padding-top: 12px;
+    gap: 5px;
+    background-color: #17173B;
+}
+
+.botones > button{
+    border: none;
+    border-radius: 15px;
+    background-color: #17173B;
+    color: wheat;
+    font-size: 20px;
+    font-family: "Kanit", sans-serif;
+}
+
+.botones > button:hover{
+    background-color: #080C31;
+    cursor: pointer;
+}
+
+.botones > button:active{
+    cursor: pointer;
+    background-color: #D33445;
+}
+
+
+#igualbt{
+    grid-row: 4 / 6;
+    grid-column: 4 / 5;
+    background-color: #af2b38;
+    border-radius: 20px;
+
+    &:hover{
+        background-color: #e24252;
+    }
+
+    &:active{
+        background-color: #7c2029;;
+    }
+}
+
+.cero{
+    grid-column: 1/3;
+}
