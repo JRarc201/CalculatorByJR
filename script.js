@@ -5,8 +5,12 @@ const buttons = document.querySelectorAll("button")
 buttons.forEach((btn) => {
     btn.addEventListener('click', () => {
         if(btn.id === "igualbt"){
-            minipantalla.value = pantalla.value + "=";
+            if(pantalla.value === ""){
+                minipantalla.value = "por favor, escriba una operación";
+            } else{
+                minipantalla.value = pantalla.value + "=";
             pantalla.value = eval(pantalla.value);
+            }
         }else if(btn.id === "c"){
             minipantalla.value = "";
             pantalla.value = "";

@@ -2,7 +2,7 @@
 
 
 body{
-    background-color: #17173B;
+    background-color: #080C31;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -70,7 +70,8 @@ body{
     background-color: #17173B;
     color: wheat;
     font-size: 20px;
-    font-family: "Kanit", sans-serif;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 600;
 }
 
 
